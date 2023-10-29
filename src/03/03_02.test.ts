@@ -8,15 +8,15 @@ beforeEach(() => {
         title: "New York",
         houses: [
             {
-                buildAt: 2012, repaired: false,
+                id: 1, buildAt: 2012, repaired: false,
                 address: {number: 100, street: {title: "White street"}},
             },
             {
-                buildAt: 2008, repaired: false,
+                id: 2, buildAt: 2008, repaired: false,
                 address: {number: 100, street: {title: "Happy street"}},
             },
             {
-                buildAt: 2020, repaired: false,
+                id: 3, buildAt: 2020, repaired: false,
                 address: {number: 101, street: {title: "Happy street"}},
             },
 
@@ -95,3 +95,4 @@ test('Greeting message should be correct for city', () => {
 
     expect( createMessage(city) ).toBe("Hello New York citizens. I want you be happy! All 1000000 men");
 });
+
