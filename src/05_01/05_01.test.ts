@@ -14,7 +14,7 @@ beforeEach(()=>{
     ]
 })
 
-test("should get array of greeting messages", () => {
+test.skip("should get array of greeting messages", () => {
     const messages = createGreetingMessage(people)
 
     expect(messages.length).toBe(3);

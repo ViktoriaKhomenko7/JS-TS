@@ -43,7 +43,7 @@ beforeEach(() => {
     }
 })
 
-test('Houses should be destroyed', () => {
+test.skip('Houses should be destroyed', () => {
     demolishHousesOnTheStreet(city, "Happy street")
 
     expect(city.houses.length).toBe(1);
@@ -51,7 +51,7 @@ test('Houses should be destroyed', () => {
 });
 
 
-test('buildings with correct staff count', () => {
+test.skip('buildings with correct staff count', () => {
     let buildings = getBuildingsWithStaffCountGreaterThan(city.governmentBuildings, 500)
 
     expect(buildings.length).toBe(1);

@@ -18,3 +18,7 @@ export const createMessages = (houses: Array<HouseType>) => {
     }
     return houses.map(callbackfn)
 }
+
+
+// анонимная стрелочная ф-ция .map(h=>bla-bla)
+//callback - ф-ция, кот. мы не вызываем, а отдаем в другой код

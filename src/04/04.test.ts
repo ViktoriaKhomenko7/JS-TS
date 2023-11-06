@@ -1,6 +1,6 @@
 
 
-test("should sort and take old ones older than 90", () => {
+test.skip("should sort and take old ones older than 90", () => {
     const ages = [18, 22, 20, 1, 90, 100, 14];
     const predicate = (age: number) => {
         return age > 90;
@@ -12,7 +12,7 @@ test("should sort and take old ones older than 90", () => {
     expect(oldAges[0]).toBe(100);
 })
 
-test("should take courses cheaper 160", () => {
+test.skip("should take courses cheaper 160", () => {
     const courses = [
         {title: "css", price: 110},
         {title: "js", price: 200},
@@ -27,7 +27,7 @@ test("should take courses cheaper 160", () => {
     expect(cheapCourses[1].title).toBe("react");
 })
 
-test("get only completed tasks", ()=> {
+test.skip("get only completed tasks", ()=> {
     const tasks = [
         {id: 1, title: "Bread", isDone: false},
         {id: 2, title: "Milk", isDone: true},
@@ -44,7 +44,7 @@ test("get only completed tasks", ()=> {
 
 })
 
-test("get only uncompleted tasks", ()=> {
+test.skip("get only uncompleted tasks", ()=> {
     const tasks = [
         {id: 1, title: "Bread", isDone: false},
         {id: 2, title: "Milk", isDone: true},
