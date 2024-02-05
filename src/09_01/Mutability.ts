@@ -4,6 +4,6 @@ let user = {
     age: 32
 }
 
-// function icreaseAge(user) {
+// function increaseAge(user) {
 //     user.age++
 // }
